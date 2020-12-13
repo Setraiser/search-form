@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Search Form, tw MRSOFT</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="" class="form">
+      <div class="form__text-field-wrapper">
+        <input type="text" class="form__text-field" placeholder="Введите текст или длину строки..." />
+        <input type="checkbox" class="form__register-flag" id="register-flag" />
+        <label for="register-flag" class="form__label">Выключить чувствительность к регистру</label>
+      </div>
+      
+      <div class="form__button-container">
+        <button class="form__substr-filter filter-btn">Поиск по подстроке</button>
+        <button class="form__length-filter filter-btn">Поиск по длинне строки</button>
+      </div>
+    </form>
+    <div class="result">
+      <h3 class="result__title">Результат</h3>
+      <div class="result__content"></div>
+    </div>
+  </div>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
